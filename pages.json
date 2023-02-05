@@ -1,17 +1,73 @@
 {
 	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "uni-app"
-		}
-	}],
+            "path" : "pages/Notice/Notice",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/List/List",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Order/Order",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/My/My",
+            "style" :                                                                                    
+            {
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "校园停车位预约系统",
+		"navigationBarBackgroundColor": "#409eff",
+		"backgroundColor": "#409eff",
 		"app-plus": {
 			"background": "#efeff4"
 		}
-	}
+	},
+	"tabBar": {
+		"selectedColor": "#000000",
+		"list": [
+		      {
+		        "pagePath": "pages/Notice/Notice",
+		        "text": "首页",
+		        "iconPath": "static/tab_icons/homepage.png",
+		        "selectedIconPath": "static/tab_icons/homepage_fill.png"
+		      },
+		      {
+		        "pagePath": "pages/List/List",
+		        "text": "预约",
+		        "iconPath": "static/tab_icons/activity.png",
+		        "selectedIconPath": "static/tab_icons/activity_fill.png"
+		      },
+		      {
+		        "pagePath": "pages/Order/Order",
+		        "text": "订单",
+		        "iconPath": "static/tab_icons/createtask.png",
+		        "selectedIconPath": "static/tab_icons/createtask_fill.png"
+		      },
+		      {
+		        "pagePath": "pages/My/My",
+		        "text": "我的",
+		        "iconPath": "static/tab_icons/people.png",
+		        "selectedIconPath": "static/tab_icons/people_fill.png"
+		      }
+		    ]
+		  }
 }
